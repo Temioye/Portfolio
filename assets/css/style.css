@@ -40,6 +40,7 @@ body {
 .header h1 {
     display: inline-block;
     font-size: 48px;
+
 }
 
 .header {
@@ -53,6 +54,17 @@ a {
     color: #3a1f11;
     text-decoration-line: underline;
     
+}
+
+.page-wrapper {
+ margin: 0px 5%;
+ display: grid;
+ min-height: 500px;
+ height: 70vh;
+ grid-template-rows: 100px;
+ grid-template-columns: 25% 25% 25%;   
+ grid-template-areas: 
+ "about" "work" "contact"
 }
 
 
