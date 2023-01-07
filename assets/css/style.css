@@ -46,28 +46,45 @@ body {
 .header {
 padding: 20px;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-background-color: #bf9b80;
-color: #3a1f11;
+background-color: gray;
+color: black;
 }
 
 a {
-    color: #3a1f11;
+    color: black;
     text-decoration-line: underline;
     
 }
 
 .page-wrapper {
- margin: 0px 5%;
- display: grid;
+ margin: 0px 5%; 
  min-height: 500px;
  height: 70vh;
  grid-template-rows: 100px;
- grid-template-columns: 25% 25% 25%;   
+ grid-template-columns: 25% 25% 25% 25%;   
  grid-template-areas: 
- "about" "work" "contact"
+ "head" "about" "work" "contact"
+ 
 }
 
+.page-section {
+ display: flex;  
+ justify-content: space-between;  
+    margin-bottom: 115px;
+        margin-top: 10px;
+        
+        
 
+}
+
+.header2 {
+border-right: solid 5px black;
+
+
+}
+.header2 h2 {
+    margin-right: 10px;
+}
 
 
 
