@@ -9,6 +9,7 @@ body {
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
+    background-color: lightgray;
 }
 
 .hero-banner {
@@ -16,8 +17,8 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-image: url(../images/02-hero-bg.jpg);
     text-align: right;
-    
 }
+
 
 .header nav {
     padding: 15px;
@@ -34,7 +35,7 @@ body {
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
-    color: #3a1f11;
+    color: gray;
 }
 
 .header h1 {
@@ -44,124 +45,115 @@ body {
 }
 
 .header {
-padding: 20px;
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-background-color: gray;
-color: black;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: grey;
+    color: black;
 }
 
 a {
     color: black;
     text-decoration-line: underline;
-    
-}
 
-.page-wrapper {
- margin: 0px 5%; 
- min-height: 500px;
- height: 70vh;
- grid-template-rows: 100px;
- grid-template-columns: 25% 25% 25% 25%;   
- grid-template-areas: 
- "head" "about" "work" "contact"
- 
-}
-
-.page-section {
- display: flex;  
- justify-content: space-between;  
-    margin-bottom: 115px;
-        margin-top: 10px;
-        
-}
-
-#work{
-
-}
-
-
-.header2 {
-border-right: solid 5px black;
-padding-right: 5px;
-padding-top: 20px;
-
-
-
-}
-
-.text{
-    margin-left: 20px;
-    padding-top: 20px;
-} 
-
-.header2 h2 {
-    margin-right: 10px;
-    
 }
 
 
 
 .boxWrapper {
+    display: grid;
+    margin: 0px 5%;
+    min-height: 500px;
+    height: 70vh;
+    padding-left: 150px;
+    justify-content: center;
+    grid-auto-rows: minmax(150px, auto);
+    grid-template-columns: 200px 250px;
+    grid-gap: 20px;
+    grid-template-areas:
+        "header header"
+        "smallBox1 smallBox2"
+        "smallBox3 smallBox4"
 
 }
 
-.boxWrapper div {
-    border: 1px black solid;
-    padding: 10px;
+#bigBox {
+    grid-area: header;
+    background-image: url(../images/02-portfolio-1.jpg);
+   
+}
+
+#smallBox1 {
+    grid-area: smallBox1;
+    background-image: url(../images/02-portfolio-2.jpg);
+}
+
+#smallBox2 {
+    grid-area: smallBox2;
+    background-image: url(../images/02-portfolio-3.jpg);
+}
+
+#smallBox3 {
+    grid-area: smallBox3;
+    background-image: url(../images/02-portfolio-4.jpg);
+}
+
+#smallBox4 {
+    grid-area: smallBox4;
+    background-image: url(../images/02-run-buddy.jpg);
+}
+
+
+
+.page-section {
+    display: flex;
+    /* display: grid; */
+    flex-direction: row;
+    justify-content: flex-start;
+    /* justify-content: space-between; */
+    margin-bottom: 115px;
+    margin-top: 10px;
+    padding-left: 20px;
+
+}
+
+.header2 {
+    border-right: solid 5px black;
+    padding-right: 5px;
+    padding-top: 20px;
+}
+
+.text {
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.header2 h2 {
+    margin-right: 10px;
+}
+
+.info {
+    list-style-type: none;
+display: inline-block;
+    margin-left: 25px;
+    padding: 15px;
+        margin-right: 20px;
+    
     
 }
 
-.row1-bigBox {
-   /* border: 5px black solid;  */
 
-   /* margin-left: 20px; */
-  /* height: 75%; */
-  
+
+.projects:hover {
+    transform: scale(1.1);
 }
 
-.img-code {
-    width: 500px;
-    /* border: 5px solid; */
-    float:left
+h1 
+
+h2 {
+    color: white;
 }
 
-.row2-2SmallBox{
-
-}
-
-.row3-2SmalBox{
-
-}
-
-.smallBox1{
-flex: 1;
-
-}
-
-
-
-
-.smallBox2{
-flex: 1;
-
-}
-
-.smallBoxWrapper{
-    display: flex;
-}
-
-
-
-
-
-/* .img-code:hover  */
-
-
-
-
-
-
-h1 h2 h3,
+h3,
 
 h4,
 h5,
