@@ -10,3 +10,4 @@ Professional portfolio
 <img width="877" alt="portfolio2" src="https://user-images.githubusercontent.com/117649696/221299697-6e33b9b7-a793-4860-ad43-3b0b7b4c5624.png">
 
 ## Link
+https://temioye.github.io/Portfolio/ 
